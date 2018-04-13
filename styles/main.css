@@ -77,8 +77,12 @@ nav.main-nav .nav-link {
     color: rgb(153, 149, 129);
 }
 
+.servicios {
+    background-color: #fff;
+}
+
 .image-links img {
-    border: 6px solid white;
+    border: 2px solid rgb(153, 149, 129);
     height: 250px;
     width: 350px;
     /* QUITAR CUANDO LAS IMAGENES TENGAS EL MISMO TAMANO */
