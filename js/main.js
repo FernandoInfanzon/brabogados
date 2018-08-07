@@ -13,6 +13,95 @@ $(document).ready(function() {
         arrow: true
     });
 
+    $('#contact_form').on("submit", function(event) {
+
+        event.preventDefault();
+
+        var errors = [];
+
+        //Validates the Name Input Field
+        var name = $('#name').val();
+        var nameField = $('#name');
+        var nameDiv = nameField.parent();
+
+        if (name.length < 3) {
+
+            nameField.addClass('is-invalid');
+            nameDiv.addClass('is-invalid').find('small').html('Error');
+            nameDiv.find('label').addClass('col-form-label');
+            errors.push("1");
+
+        } else {
+
+            nameField.addClass('is-valid').removeClass('is-invalid');
+            nameDiv.addClass('is-valid').removeClass('is-invalid').find('small').html('Valid');
+            nameDiv.find('label').addClass('col-form-label');
+
+        }
+
+        //Validates the Email Input Field
+        var email = $('#email').val();
+        var emailField = $('#email');
+        var emailDiv = emailField.parent();
+
+        if (name.length < 3) {
+
+            emailField.addClass('is-invalid');
+            emailDiv.addClass('is-invalid').find('small').html('Error');
+            emailDiv.find('label').addClass('col-form-label');
+            errors.push("2");
+
+        } else {
+
+            emailField.addClass('is-valid').removeClass('is-invalid');
+            emailDiv.addClass('is-valid').removeClass('is-invalid').find('small').html('Valid');
+            emailDiv.find('label').addClass('col-form-label');
+
+        }
+
+        //Validates the Message Input Field
+        var message = $('#message').val();
+        var messageField = $('#message');
+        var messageDiv = messageField.parent();
+
+        if (name.length < 3) {
+
+            messageField.addClass('is-invalid');
+            messageDiv.addClass('is-invalid').find('small').html('Error');
+            messageDiv.find('label').addClass('col-form-label');
+            errors.push("3");
+
+        } else {
+
+            messageField.addClass('is-valid').removeClass('is-invalid');
+            messageDiv.addClass('is-valid').removeClass('is-invalid').find('small').html('Valid');
+            messageDiv.find('label').addClass('col-form-label');
+
+        }
+
+
+        var contact_form = $('#contact_form');
+        if (!errors.length > 0) {
+            $.ajax({
+                type: contact_form.attr('method'),
+                url: contact_form.attr('action'),
+                data: contact_form.serialize()
+
+            }).done(function(data) {
+                var result = data;
+                var response = JSON.parse(result);
+                $('#output').append(response.message).addClass('d-block').fadeIn();
+
+            });
+
+
+        }
+
+
+
+
+    });
+
 });
 
 $(window).scroll(function() {
@@ -45,7 +134,7 @@ $(window).scroll(function() {
     };
 
     if (windowWidth <= 576) {
-        if (windowScrollTop > 3500) {
+        if (windowScrollTop > 3158) {
             $('.process').css('background', 'tomato');
             secondAnimation();
 
@@ -54,7 +143,7 @@ $(window).scroll(function() {
     }
 
     if (windowWidth > 576 && windowWidth <= 768) {
-        if (windowScrollTop > 3300) {
+        if (windowScrollTop > 3222) {
             $('.process').css('background', 'tomato');
             secondAnimation();
         }
@@ -62,18 +151,20 @@ $(window).scroll(function() {
 
 
     if (windowWidth > 768 && windowWidth <= 992) {
-        if (windowScrollTop > 2200) {
+        if (windowScrollTop > 2331) {
             $('.process').css('background', 'tomato');
             secondAnimation();
         }
     }
 
     if (windowWidth > 992) {
-        if (windowScrollTop > 2100) {
+        if (windowScrollTop > 2015) {
             $('.process').css('background', 'tomato');
             secondAnimation();
         }
     }
+
+
 
 
 });

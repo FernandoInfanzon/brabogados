@@ -31,6 +31,11 @@ h3 span {
     color: #999581;
 }
 
+.imagen-modal {
+    align-self: center;
+    margin-bottom: 5%;
+}
+
 .logo {
     height: 120px;
 }
@@ -171,7 +176,7 @@ nav.main-nav .nav-link {
     color: #e7e5df;
 }
 
-.footer a {
+.fernando {
     text-decoration: none;
     color: #4d4738;
 }
@@ -307,6 +312,36 @@ nav.main-nav .nav-link {
     margin-top: -10px;
 }
 
+.contacto {
+    background: white;
+}
+
+#name,
+#email,
+#message {
+    background-color: white;
+    border-width: 2px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.telefono {
+    color: #999581;
+}
+
+.badge {
+    color: #efede3;
+}
+
+.formulario {
+    background-image: url('../img/edificios.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    color: white;
+}
+
 @media screen and (min-width: 900px) {
     .point,
     .point2 {
@@ -386,14 +421,3 @@ nav.main-nav .nav-link {
         left: 82%;
     }
 }
-
-
-/* 
-@media screen and (min-width: 500px) {
-    img {
-        width: 30%;
-    }
-    #content {
-        padding: 15%;
-    }
-} */
