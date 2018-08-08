@@ -13,6 +13,8 @@ $(document).ready(function() {
         arrow: true
     });
 
+
+
     $('#contact_form').on("submit", function(event) {
 
         event.preventDefault();
@@ -104,10 +106,15 @@ $(document).ready(function() {
 
 });
 
+
+
+
+
 $(window).scroll(function() {
     var windowWidth = $(this).width();
     var windowHeight = $(this).height();
     var windowScrollTop = $(this).scrollTop();
+    console.log(windowScrollTop);
 
 
 
@@ -134,7 +141,7 @@ $(window).scroll(function() {
     };
 
     if (windowWidth <= 576) {
-        if (windowScrollTop > 3158) {
+        if (windowScrollTop > 2600) {
             $('.process').css('background', 'tomato');
             secondAnimation();
 
@@ -143,7 +150,7 @@ $(window).scroll(function() {
     }
 
     if (windowWidth > 576 && windowWidth <= 768) {
-        if (windowScrollTop > 3222) {
+        if (windowScrollTop > 2600) {
             $('.process').css('background', 'tomato');
             secondAnimation();
         }
@@ -151,14 +158,14 @@ $(window).scroll(function() {
 
 
     if (windowWidth > 768 && windowWidth <= 992) {
-        if (windowScrollTop > 2331) {
+        if (windowScrollTop > 1700) {
             $('.process').css('background', 'tomato');
             secondAnimation();
         }
     }
 
     if (windowWidth > 992) {
-        if (windowScrollTop > 2015) {
+        if (windowScrollTop > 750) {
             $('.process').css('background', 'tomato');
             secondAnimation();
         }
