@@ -1,3 +1,14 @@
+/* https://st.depositphotos.com/1186033/4019/i/950/depositphotos_40190865-stock-photo-dollar-paper-boat-on-financial.jpg */
+
+
+/* https://st.depositphotos.com/1005979/5044/i/950/depositphotos_50443341-stock-photo-imports-and-exports-words-on.jpg */
+
+
+/* https://st2.depositphotos.com/1007959/7153/i/950/depositphotos_71537245-stock-photo-ship-harbored-at-port-of.jpg */
+
+
+/* https://static8.depositphotos.com/1074452/806/i/950/depositphotos_8065997-stock-photo-export-or-import-directions-on.jpg */
+
 body {
     font-family: 'Libre Franklin', sans-serif;
     background-color: #efede3;
@@ -319,11 +330,18 @@ nav.main-nav .nav-link {
 #name,
 #email,
 #message {
-    background-color: white;
+    background-color: transparent;
     border-width: 2px;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
+}
+
+#message {
+    border-width: 2px;
+    border-top: whitesmoke;
+    border-left: whitesmoke;
+    border-right: whitesmoke;
 }
 
 .telefono {
@@ -335,7 +353,7 @@ nav.main-nav .nav-link {
 }
 
 .formulario {
-    background-image: url('../img/edificios.jpeg');
+    background-image: url('https://st.depositphotos.com/3246463/5155/i/950/depositphotos_51556129-stock-photo-legal-advice-concept.jpg');
     background-repeat: no-repeat;
     background-position: center;
     min-height: 300px;
