@@ -352,13 +352,14 @@ nav.main-nav .nav-link {
     color: #efede3;
 }
 
-.formulario {
+
+/* .formulario {
     background-image: url('https://st.depositphotos.com/3246463/5155/i/950/depositphotos_51556129-stock-photo-legal-advice-concept.jpg');
     background-repeat: no-repeat;
     background-position: center;
     min-height: 300px;
     color: white;
-}
+} */
 
 @media screen and (min-width: 900px) {
     .point,
